@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+
+$primary: #FF7A00;
+$secondary: #001E89;
+$dark: #383838;
+$white: #FAFAF9;
+$light: #f5f5f5;
+$milk: #FFF9F3;
+$grad : radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding: 10vh;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: $white;
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.cta {
+    padding: 1.2rem 3rem;
+    background-color: $primary;
+    color: $white;
+    text-decoration: none;
+    border-radius: 20px 20px 20px 0;
+}
+
+.cta.cta-secondary {
+    background-color: transparent;
+    border: 2px solid $primary;
+    color: $primary;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+
+    span {
+        color: $primary;
+    }
+}
+
+
+#nav {
+    background-color: transparent;
+    position: fixed;
+
+    a {
+        color: #383838;
+    }
+
+    a.cta {
+        color: unset;
+        background-color: unset;
+        background-color: transparent;
+        border: 2px solid $primary;
+        color: $primary;
+    }
+}
+
+#header {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+
+    .outer {
+        display: flex;
+        flex-wrap: wrap;
+        align-self: stretch;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 6rem;
+        font-weight: bold;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    p {
+        margin: 3rem 0;
+        color: $dark;
+    }
+
+    .left {
+        flex: 1 0 30rem;
+        // margin-right: 30px;
+    }
+
+    .right {
+        flex: 1 0 45rem;
+    }
+
+    @supports (gap: 30px){
+        .outer {
+            gap: 30px;
+        }
+
+        .left {
+            margin-right: unset;
+        }
+        .right {
+            margin-bottom: unset;
+        }
+    }
+}
+
+#abt-us {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    color: $dark;
+    background-color: $milk;
+
+    .outer {
+        align-self: stretch;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .left {
+        flex: 1 0 40rem;
+        display: flex;
+        align-items: center;
+        margin-right: 3rem;
+    }
+
+    .right {
+        flex: 1 0 40rem;
+    }
+
+    .store-links {
+        display: flex;
+
+        .apple {
+            background-color: #111;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            line-height: 12px;
+            color: $light;
+            border-radius: 10px;
+            height: 100%;
+            margin: 0 20rem;
+
+            p {
+                font-size: 0.8rem;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+
+
+            img {
+                display: block;
+                margin-right: 10px;
+            }
+        }
+
+        .google {
+            background-color: #111;
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            line-height: 12px;
+            color: $light;
+            border-radius: 10px;
+            height: 100%;
+
+            p {
+                font-size: 0.8rem;
+                margin: 0;
+            }
+
+            h3 {
+                font-size: 2rem;
+                font-weight: bolder;
+            }
+
+
+            img {
+                display: block;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    @supports (gap: 20px) {
+        .store-links {
+            gap: 20px;
+
+            .apple,
+            .google {
+                margin: 0 0;
+            }
+        }
+    }
+    
+}
+
+#services {
+    .savings{
+        background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+        min-height: 80vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: $white;
+
+        .outer {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+
+            .body {
+                flex: 0 0 50rem;
+
+                h2 {
+                    font-size: 4rem;
+                }
+
+                p {
+                    margin: 2rem 0;
+                }
+            }
+        }
+
+        .savings-mascot {
+            position: absolute;
+            height: 60rem;
+            width: auto;
+            bottom: 0;
+            right: 10%;
+            z-index: 0;
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 500px) {
+    html {
+        font-size: 50%;
+    }
+
+    #header {
+        .outer {
+            flex-direction: column-reverse;
+            gap: unset;
+        }
+
+        .left {
+
+        }
+
+        .right {
+            padding: 3rem;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+
+        .mouse {
+            display: none;
+        }
+    }
+
+    #abt-us {
+        .left {
+            flex: 1 0 40rem;
+        }
+
+        .right {
+            padding: 2rem 0;
+        }
+
+        .store-links {
+            flex-direction: column-reverse;
+        }
+    }
+
+    #services {
+        .savings {
+            .savings-mascot {
+                height: 55%;
+                right: 20%;
+            }
+        }
+
+        .outer {
+            align-items: flex-start;
+
+            .body {
+                align-self: start;
+                max-width: 100%;
+                margin-top: 5rem;
+            }
+        }
+    }
+}

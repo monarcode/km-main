@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 10vh;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #FAFAF9;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.cta {
+  padding: 1.2rem 3rem;
+  background-color: #FF7A00;
+  color: #FAFAF9;
+  text-decoration: none;
+  border-radius: 20px 20px 20px 0;
+}
+
+.cta.cta-secondary {
+  background-color: transparent;
+  border: 2px solid #FF7A00;
+  color: #FF7A00;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h2 span {
+  color: #FF7A00;
+}
+
+#nav {
+  background-color: transparent;
+  position: fixed;
+}
+
+#nav a {
+  color: #383838;
+}
+
+#nav a.cta {
+  color: unset;
+  background-color: unset;
+  background-color: transparent;
+  border: 2px solid #FF7A00;
+  color: #FF7A00;
+}
+
+#header {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#header .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+#header h1 span {
+  color: #FF7A00;
+}
+
+#header p {
+  margin: 3rem 0;
+  color: #383838;
+}
+
+#header .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30rem;
+          flex: 1 0 30rem;
+}
+
+#header .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 45rem;
+          flex: 1 0 45rem;
+}
+
+@supports (gap: 30px) {
+  #header .outer {
+    gap: 30px;
+  }
+  #header .left {
+    margin-right: unset;
+  }
+  #header .right {
+    margin-bottom: unset;
+  }
+}
+
+#abt-us {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #383838;
+  background-color: #FFF9F3;
+}
+
+#abt-us .outer {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#abt-us .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 3rem;
+}
+
+#abt-us .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
+}
+
+#abt-us .store-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#abt-us .store-links .apple {
+  background-color: #111;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 12px;
+  color: #f5f5f5;
+  border-radius: 10px;
+  height: 100%;
+  margin: 0 20rem;
+}
+
+#abt-us .store-links .apple p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+#abt-us .store-links .apple h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#abt-us .store-links .apple img {
+  display: block;
+  margin-right: 10px;
+}
+
+#abt-us .store-links .google {
+  background-color: #111;
+  padding: 1rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 12px;
+  color: #f5f5f5;
+  border-radius: 10px;
+  height: 100%;
+}
+
+#abt-us .store-links .google p {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+#abt-us .store-links .google h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+#abt-us .store-links .google img {
+  display: block;
+  margin-right: 10px;
+}
+
+@supports (gap: 20px) {
+  #abt-us .store-links {
+    gap: 20px;
+  }
+  #abt-us .store-links .apple,
+  #abt-us .store-links .google {
+    margin: 0 0;
+  }
+}
+
+#services .savings {
+  background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+  min-height: 80vh;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #FAFAF9;
+}
+
+#services .savings .outer {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#services .savings .outer .body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50rem;
+          flex: 0 0 50rem;
+}
+
+#services .savings .outer .body h2 {
+  font-size: 4rem;
+}
+
+#services .savings .outer .body p {
+  margin: 2rem 0;
+}
+
+#services .savings .savings-mascot {
+  position: absolute;
+  height: 60rem;
+  width: auto;
+  bottom: 0;
+  right: 10%;
+  z-index: 0;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  #header .outer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: unset;
+  }
+  #header .right {
+    padding: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #header .right img {
+    width: 80%;
+    height: auto;
+  }
+  #header .mouse {
+    display: none;
+  }
+  #abt-us .left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 40rem;
+            flex: 1 0 40rem;
+  }
+  #abt-us .right {
+    padding: 2rem 0;
+  }
+  #abt-us .store-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #services .savings .savings-mascot {
+    height: 55%;
+    right: 20%;
+  }
+  #services .outer {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #services .outer .body {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    max-width: 100%;
+    margin-top: 5rem;
+  }
+}
+/*# sourceMappingURL=km-main.css.map */
