@@ -22,6 +22,7 @@ html {
     font-size: 62.5%;
     scroll-behavior: smooth;
     scroll-padding: 10vh;
+    overflow-x: hidden;
 }
 
 body {
@@ -241,7 +242,7 @@ h2 {
                 flex: 0 0 50rem;
 
                 h2 {
-                    font-size: 4rem;
+                    font-size: 5rem;
                 }
 
                 p {
@@ -253,6 +254,80 @@ h2 {
         .savings-mascot {
             position: absolute;
             height: 60rem;
+            width: auto;
+            bottom: 0;
+            right: 10%;
+            z-index: 0;
+        }
+    }
+
+    .ag-banking {
+        background: linear-gradient(180deg, #EEF0F4 0%, #E3E5E9 100%);
+        min-height: 80vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .outer {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .body {
+                flex: 0 0 50rem;
+                justify-self: flex-end;
+
+                h2 {
+                    font-size: 5rem;
+                }
+
+                p {
+                    margin: 2rem 0;
+                }
+            }
+        }
+
+        .ag-banking-mascot {
+            position: absolute;
+            height: auto;
+            width: 60rem;
+            bottom: 0;
+            left: 10%;
+            z-index: 0;
+        }
+    }
+
+    .investment {
+        background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+        min-height: 80vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: $white;
+
+        .outer {
+            align-self: stretch;
+            display: flex;
+            align-items: center;
+
+            .body {
+                flex: 0 0 55rem;
+
+                h2 {
+                    font-size: 5rem;
+                }
+
+                p {
+                    margin: 2rem 0;
+                }
+            }
+        }
+
+        .invest-mascot {
+            position: absolute;
+            height: 55rem;
             width: auto;
             bottom: 0;
             right: 10%;
@@ -277,9 +352,9 @@ h2 {
             gap: unset;
         }
 
-        .left {
+        // .left {
 
-        }
+        // }
 
         .right {
             padding: 3rem;
@@ -315,8 +390,9 @@ h2 {
     #services {
         .savings {
             .savings-mascot {
-                height: 55%;
-                right: 20%;
+                height: calc(50vh + 1px);
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
 
@@ -327,6 +403,23 @@ h2 {
                 align-self: start;
                 max-width: 100%;
                 margin-top: 5rem;
+            }
+        }
+
+        .ag-banking {
+            .ag-banking-mascot {
+                width: calc(50vh + 1px);
+                height: auto;
+                left: 50%;
+                transform: translateX(-50%); 
+            }
+        }
+
+        .investment {
+            .invest-mascot {
+                height: calc(40vh + 1px);
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }
