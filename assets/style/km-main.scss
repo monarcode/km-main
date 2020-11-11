@@ -40,6 +40,10 @@ body {
     color: $white;
     text-decoration: none;
     border-radius: 20px 20px 20px 0;
+
+    &:hover {
+        color: $white;
+    }
 }
 
 .cta.cta-secondary {
@@ -72,6 +76,31 @@ h2 {
         background-color: transparent;
         border: 2px solid $primary;
         color: $primary;
+
+        &:hover {
+            background-color: $primary;
+            color: $white;
+        }
+    }
+
+    .navbar-brand img.white {
+        display: none;
+    }
+}
+
+#nav.scroll {
+    background-color: $secondary;
+    transition: all 0.4s ease-in-out;
+
+    a {
+        color: $white;
+    }
+
+    .navbar-brand img.coloured {
+        display: none;
+    }
+    .navbar-brand img.white {
+        display: unset;
     }
 }
 
@@ -463,6 +492,12 @@ h2 {
 @media screen and (max-width: 500px) {
     html {
         font-size: 50%;
+    }
+
+    #nav {
+        a.cta {
+            border: none;
+        }
     }
 
     #header {
