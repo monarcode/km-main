@@ -68,6 +68,10 @@ h2 {
 
     a {
         color: #383838;
+
+        &:hover, .active {
+            color: $primary;
+        }
     }
 
     a.cta {
@@ -94,6 +98,10 @@ h2 {
 
     a {
         color: $white;
+
+        &:hover, .active {
+            color: $primary;
+        }
     }
 
     .navbar-brand img.coloured {
@@ -497,6 +505,17 @@ h2 {
     #nav {
         a.cta {
             border: none;
+        }
+
+        .show {
+            background-color: $secondary;
+            border-radius: 20px;
+            height: 100%;
+            transition: 0.4s background-color ease-in-out;
+
+            a.nav-link {
+                color: $white;
+            }
         }
     }
 

@@ -60,6 +60,10 @@ h2 span {
   color: #383838;
 }
 
+#nav a:hover, #nav a .active {
+  color: #FF7A00;
+}
+
 #nav a.cta {
   color: unset;
   background-color: unset;
@@ -85,6 +89,10 @@ h2 span {
 
 #nav.scroll a {
   color: #FAFAF9;
+}
+
+#nav.scroll a:hover, #nav.scroll a .active {
+  color: #FF7A00;
 }
 
 #nav.scroll .navbar-brand img.coloured {
@@ -604,6 +612,16 @@ h2 span {
   }
   #nav a.cta {
     border: none;
+  }
+  #nav .show {
+    background-color: #001E89;
+    border-radius: 20px;
+    height: 100%;
+    -webkit-transition: 0.4s background-color ease-in-out;
+    transition: 0.4s background-color ease-in-out;
+  }
+  #nav .show a.nav-link {
+    color: #FAFAF9;
   }
   #header .outer {
     -webkit-box-orient: vertical;
