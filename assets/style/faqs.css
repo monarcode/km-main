@@ -1,0 +1,56 @@
+#nav {
+  position: static;
+  background-color: #001E89;
+}
+
+#nav a {
+  color: #FAFAF9;
+}
+
+#nav .navbar-brand img.white {
+  display: unset;
+}
+
+#headr {
+  min-height: 80vh;
+  background: url("../img/Dottod-World-Map_Transparent_Images-backgrounds.png") no-repeat, radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+  background-position: right;
+  background-size: contain;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#headr h1 {
+  color: #FAFAF9;
+  text-align: center;
+  font-size: 6rem;
+}
+
+#headr h1 span {
+  color: #FF7A00;
+  font-weight: bolder;
+}
+
+.faqs {
+  color: #383838;
+}
+
+.faqs .faq {
+  margin: 3rem 0;
+  background-color: #FFF9F3;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.faqs h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.faqs ul li {
+  font-weight: lighter;
+  margin: 1rem 0;
+}
+/*# sourceMappingURL=faqs.css.map */

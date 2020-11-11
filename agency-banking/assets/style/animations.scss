@@ -1,0 +1,78 @@
+
+// .mouse {
+//     animation: mouse 2s ease-in-out infinite alternate;
+//     transform-origin: center;
+//     transform-box: fill-box;
+// }
+
+// #phone {
+//     animation: phone 3s ease-in-out infinite alternate;
+//     transform-origin: bottom center;
+//     transform-box: fill-box;
+// }
+
+// #mpos-illus {
+//     animation: mpos 2s ease-in-out forwards;
+//     transform-origin: left center;
+//     transform-box: fill-box;
+// }
+
+// #card {
+//     animation: card 2s ease-in-out forwards;
+//     transform-origin: right center;
+//     transform-box: fill-box;
+// }
+
+
+
+@keyframes mous {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+
+    50% {
+        transform: translateY(-5px) translateX(0);
+    }
+
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes phone {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mpos {
+    0% {
+        transform: translateX(0) scale(0.8);
+    }
+    50% {
+        transform: translateX(7.5px) scale(1.1);
+    }
+    100% {
+        transform: translateX(15px) scale(1);
+    }
+}
+
+@keyframes card {
+    0% {
+        transform: translateX(0) scale(0.8);
+    }
+    50% {
+        transform: translateX(-7.5px) scale(1.1);
+    }
+    100% {
+        transform: translateX(-15px) scale(1);
+    }
+}

@@ -58,6 +58,8 @@ h2 span {
 
 #nav a {
   color: #383838;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 #nav a:hover, #nav a .active {
@@ -93,6 +95,10 @@ h2 span {
 
 #nav.scroll a:hover, #nav.scroll a .active {
   color: #FF7A00;
+}
+
+#nav.scroll a.cta:hover {
+  color: #FAFAF9;
 }
 
 #nav.scroll .navbar-brand img.coloured {

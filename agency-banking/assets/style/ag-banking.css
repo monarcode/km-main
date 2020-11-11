@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding: 10vh;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #FAFAF9;
+  position: relative;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.text-light {
+  color: #f5f5f5;
+}
+
+.text-dark {
+  color: #383838;
+}
+
+h2, h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #383838;
+  text-align: center;
+}
+
+h2 span, h3 span {
+  color: #FF7A00;
+}
+
+#nav {
+  background-color: #001E89;
+  position: relative;
+}
+
+#nav .navbar-nav a:nth-of-type(4) {
+  margin-left: auto;
+}
+
+#nav .navbar-nav a:nth-of-type(1) {
+  margin-left: auto;
+}
+
+#header {
+  min-height: 90vh;
+  background: url("../img/header-bg.svg") no-repeat center bottom;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#header h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+#header p {
+  margin: 3rem 0;
+}
+
+#header .ctas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .ctas a:nth-of-type(1) {
+  background-color: #FF7A00;
+  padding: 1rem 3rem;
+  color: #f5f5f5;
+  border-radius: 20px 20px 20px 0;
+  margin-right: 2rem;
+}
+
+#header .ctas a:nth-of-type(2) {
+  color: #FF7A00;
+}
+
+#header .mouse {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#header svg {
+  overflow: visible;
+}
+
+#header .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header .left, #header .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
+}
+
+#header .right {
+  padding: 2rem;
+}
+
+#offer {
+  min-height: 80vh;
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#offer .outer {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#offer .offers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#offer .offer {
+  background-color: #f2f2f2;
+  padding: 1.2rem;
+  border-radius: 20px 20px 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 140px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
+  margin: 1.2rem;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
+}
+
+#offer .offer:hover {
+  background-color: #ff7b0007;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+#offer .offer:hover h3, #offer .offer:hover p {
+  color: #FF7A00;
+}
+
+#offer .offer:hover .ico {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#offer .offer:nth-child(5) {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50rem;
+          flex: 0 1 50rem;
+}
+
+#offer .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#offer .inner h3 {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+#offer .ico {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-right: 1.6rem;
+  width: 6rem !important;
+  height: 6rem !important;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+#offer h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  color: #383838;
+}
+
+#offer p {
+  color: #383838;
+}
+
+#agents {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0;
+}
+
+#agents .outer {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#agents .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media screen and (max-width: 500px) {
+  #agents .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+#agents .left, #agents .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  #agents .left, #agents .right {
+    margin: unset;
+  }
+}
+
+#agents .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#agents .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#agents p {
+  font-size: 2rem;
+}
+
+#agents p span {
+  color: #FF7A00;
+}
+
+@media screen and (max-width: 500px) {
+  #agents p {
+    font-size: unset;
+  }
+}
+
+#onboarding {
+  min-height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#onboarding .outer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#onboarding .inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#onboarding .right, #onboarding .left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 40rem;
+          flex: 1 0 40rem;
+  margin: 2rem;
+}
+
+#onboarding .title p {
+  margin-top: 1rem;
+}
+
+#onboarding p {
+  margin-top: 1rem;
+}
+
+#onboarding .right {
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+#onboarding ol {
+  color: #383838;
+}
+
+#onboarding ol li {
+  margin: 1rem 0;
+  list-style-position: inside;
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+  #header {
+    background: radial-gradient(50% 50% at 50% 50%, #052BB3 0%, #001E89 100%);
+  }
+  #header .inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  #header .right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+/*# sourceMappingURL=ag-banking.css.map */
