@@ -195,6 +195,7 @@ h2 {
 
     .store-links {
         display: flex;
+        margin-top: 2rem;
 
         .apple {
             background-color: #111;
@@ -382,7 +383,7 @@ h2 {
 }
 
 #whyus {
-    min-height: 80vh;
+    min-height: 120vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -405,7 +406,7 @@ h2 {
         justify-content: center;
 
         .reason {
-            flex: 1 0 30rem;
+            flex: 0 0 35rem;
             background-color: transparent;
             height: 350px;
             text-align: center;
@@ -419,7 +420,7 @@ h2 {
             margin: 1rem;
 
             svg {
-                overflow: visible;
+                overflow: visible !important;
                 transform: scale(0.8);
             }
 
