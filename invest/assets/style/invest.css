@@ -76,7 +76,7 @@ body {
 }
 
 #hero h1 {
-  font-size: 8rem;
+  font-size: 6rem;
   font-weight: bold;
   text-align: center;
 }
@@ -181,6 +181,8 @@ body {
 
 #fixed .deet img {
   margin-right: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 #fixed .deet span {
@@ -323,8 +325,36 @@ body {
   margin: 1rem 0;
 }
 
+#mpos .deets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+#mpos .deet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 1rem 0;
+}
+
+#mpos .deet img {
+  margin-right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+#mpos .deet span {
+  font-weight: bolder;
+}
+
 #mpos ul {
-  list-style-image: url("../img/cir.svg");
+  list-style-image: url("../img/list-ic.svg");
   list-style-position: inside;
   justify-self: flex-start;
 }
@@ -416,6 +446,8 @@ body {
 
 #agrivest .deet img {
   margin-right: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 #agrivest .deet span {

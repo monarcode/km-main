@@ -68,7 +68,7 @@ body {
     }
 
     h1 {
-        font-size: 8rem;
+        font-size: 6rem;
         font-weight: bold;
         text-align: center;
 
@@ -144,6 +144,8 @@ body {
 
         img {
             margin-right: 20px;
+            width: 30px;
+            height: 30px;
         }
 
         span {
@@ -262,8 +264,29 @@ body {
         }
     }
 
+    .deets {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .deet {
+        display: flex;
+        margin: 1rem 0;
+
+        img {
+            margin-right: 20px;
+            width: 30px;
+            height: 30px;
+        }
+
+        span {
+            font-weight: bolder;
+        }
+    }
+
     ul {
-        list-style-image: url('../img/cir.svg');
+        list-style-image: url('../img/list-ic.svg');
         list-style-position: inside;
         justify-self: flex-start;
 
@@ -274,8 +297,6 @@ body {
 
     .right {
         display: flex;
-        // flex-direction: column;
-        // align-items: center;
     }
 }
 
@@ -327,6 +348,8 @@ body {
 
         img {
             margin-right: 20px;
+            width: 30px;
+            height: 30px;
         }
 
         span {
