@@ -117,6 +117,101 @@ h2 {
     }
 }
 
+// popup styling 
+.popup {
+    position: absolute;
+    height: 100vh;
+    max-width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #131313e2;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__container {
+        width: 600px;
+        height: 280px;
+        background-color: $white;
+        border-radius: 10px;
+        padding: 3rem;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+
+        .cancel {
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            cursor: pointer;
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__device {
+        height: 320px;
+        width: auto;
+        position: absolute;
+        bottom: 6%;
+        right: 12%;
+    }
+
+    &__title {
+        font-size: 3rem;
+        width: 60%;
+        color: $secondary;
+        margin-bottom: 3rem;
+
+        span {
+            color: $primary;
+        }
+    }
+
+    &__cta {
+        padding: 1rem 2rem;
+        background-color: $primary;
+        color: $white;
+        border-radius: 5px;
+        align-self: flex-start;
+        text-decoration: none;
+
+        &:hover {
+            color: $white;
+        }
+    }
+}
+
+.is-active {
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.is-inactive {
+    z-index: -1;
+    visibility: hidden;
+}
+
+.popup-active {
+    overflow-y: hidden;
+    max-height: 100vh;
+}
+
+
+
 #header {
     min-height: 100vh;
     display: flex;
@@ -148,6 +243,15 @@ h2 {
     .left {
         flex: 1 0 30rem;
         // margin-right: 30px;
+    }
+
+    .cta:nth-of-type(1){
+        border-radius: 20px 20px 0 20px;
+    }
+    .cta:nth-of-type(2){
+        background-color: transparent;
+        // border: 2px solid $primary;
+        color: $primary;
     }
 
     .right {
@@ -330,6 +434,16 @@ h2 {
                 p {
                     margin: 2rem 0;
                 }
+
+                .cta:nth-of-type(1){
+                    border-radius: 20px 20px 0 20px;
+                    margin-right: 1rem;
+                }
+                .cta:nth-of-type(2){
+                    border-radius: 20px 20px 20px 0;
+                    background-color: transparent;
+                    color: $primary;
+                }
             }
         }
 
@@ -504,11 +618,38 @@ h2 {
 
 
 
-
-
 @media screen and (max-width: 500px) {
     html {
         font-size: 50%;
+    }
+
+    .popup {
+        &__container {
+            width: 90vw;
+            height: 170px;
+        }
+
+        &__device {
+            display: none;
+        }
+
+        &__title {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__content {
+            justify-content: space-evenly;
+        }
+
+        &__cta {
+            align-self: center;
+        }
+
+        &__cancel {
+            top: 5%;
+            right: 5%;
+        }
     }
 
     #nav {

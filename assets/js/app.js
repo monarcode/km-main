@@ -25,4 +25,21 @@ window.onload = (event) => {
             window.open("https://apps.apple.com/ng/app/kolomoni/id1479338235");
         }
     });
+
+    // popup logic
+
+    $(document).ready(function(){
+        var popup = document.getElementById('popup');
+        var cancelBtn = document.querySelector('.cancel');
+
+        popup.classList.add('is-active');
+        document.body.classList.add('popup-active');
+
+        cancelBtn.addEventListener('click', function(){
+            popup.classList.remove('is-active');
+            popup.classList.add('is-inactive');
+            document.body.classList.remove('popup-active');
+
+        });
+    });
 }
